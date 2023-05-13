@@ -1,0 +1,88 @@
+#content_left {
+    width: 50%;
+}
+
+#content_right {
+    width: 50%;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    border-style: none;
+    background-color: transparent;
+}
+
+.tabla {
+    width: 90%;
+    border: aquamarine;
+    border-style: solid;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.columna {
+    text-align: center;
+    width: 33%;
+    position: relative;
+    border-radius: 50%;
+    border-style: none;
+    /*background-color: transparent;*/
+}
+
+.columna-centro {
+    text-align: center;
+    width: 34%;
+    position: relative;
+    border-radius: 50%;
+    border-style: none;
+    /*background-color: transparent;*/
+}
+
+.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-style: none;
+}
+
+::ng-deep .mat-ripple {
+    border-radius: 50% !important;
+}
+
+/*
+::ng-deep .mat-button-toggle-appearance-standard {
+    background: transparent;
+}
+*/
+
+
+.mat-button-toggle-appearance-standard {
+    background: none;
+}
+
+.mat-button-toggle-checked {
+    background: rgb(195, 195, 195);
+}
+
+
+.circulo {
+    border-color: red;
+    border-radius: 50%;
+    border-style: solid;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.circulo:hover {
+    background-color: darkgray;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.actividad_imagen {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}

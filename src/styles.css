@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    background-color: #F5F2F1;
+    /*
+    background-image: url(./assets/images/login/Picture.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    */
+}
+
+@font-face {
+    font-family: "GothamRoundedBold";
+    src: url('assets/fonts/GothamRoundedBold_21016.ttf');
+}
+
+@font-face {
+    font-family: "Quicksand_Book";
+    src: url('assets/fonts/Quicksand_Book.otf');
+}
+
+@font-face {
+    font-family: "Chalkboard_Bold";
+    src: url('assets/fonts/Chalkboard_Bold.ttf');
+}
+
+.mat-tooltip.tooltip {
+    font-size: 30px !important;
+}

@@ -1,0 +1,57 @@
+<div class="row"><app-cambiar-pagina></app-cambiar-pagina></div>
+<div class="row">
+  <div id="content_left" class="col">
+    <app-lectura 
+      [titulo]="titulo"
+      [colorTitulo]="colorTitulo"
+      [foco1]="foco1"
+      [foco2]="foco2"
+      [colorFoco]="colorFoco"
+      [imagen]="imagen"
+      [lectura]="lectura">
+    </app-lectura>
+  </div>
+  <div id="content_right" class="col">
+    <app-actividad-titulo
+      [titulo]="actividadTitulo"
+      [imagen]="acctividadImagen">
+    </app-actividad-titulo>
+    
+    <app-lapicito
+      [bloque]="bloque"
+      [texto]="actividad_1">
+    </app-lapicito>
+    
+    <p><b>1.</b> Cuando mis maestros me pidan algo, yo me comprometo a:</p>
+        <mat-form-field class="example-full-width">
+          <textarea matInput></textarea>
+        </mat-form-field>
+
+        <p><b>2.</b> Cuando mis papás me den una orden yo me comprometo a:</p>
+        <mat-form-field class="example-full-width">
+          <textarea matInput></textarea>
+        </mat-form-field>
+
+        <p><b>3.</b> Cuando quiera jugar, pero no he acabado mis tareas me comprometo a:</p>
+        <mat-form-field class="example-full-width">
+          <textarea matInput></textarea>
+        </mat-form-field>
+
+        <p><b>4.</b> Cuando me esté enojando porque no me salen las cosas, me comprometo a:</p>
+        <mat-form-field class="example-full-width">
+          <textarea matInput></textarea>
+        </mat-form-field>
+
+        <p><b>5.</b> Cuando no sea hora de comer y tenga antojos me comprometo a:</p>
+        <mat-form-field class="example-full-width">
+          <textarea matInput></textarea>
+        </mat-form-field>
+
+        <p><b>6.</b> Cuando no quiera ir a la escuela porque tengo flojera, me comprometo a:</p>
+        <mat-form-field class="example-full-width">
+          <textarea matInput></textarea>
+        </mat-form-field>
+
+        <p>Los malos hábitos debilitan tu voluntad</p>
+  </div>
+</div>

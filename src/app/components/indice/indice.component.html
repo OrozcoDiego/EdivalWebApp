@@ -1,0 +1,288 @@
+
+  <div class="row">
+    <div id="content_left" class="col">
+      <p class="indice">Índice</p>
+      <mat-accordion class="example-headers-align">
+        <!--  Bloque 1  -->
+        <mat-expansion-panel [expanded]="step === 1" hideToggle>
+          <mat-expansion-panel-header (click)="setStep(1)">
+            <mat-panel-title>
+              
+              <div class="blockColor b1">
+                <p class="b">B</p>
+                <p class="loque">{{'general.loque1' | translate}}</p>
+              </div>
+              
+            </mat-panel-title>
+            <mat-panel-description *ngIf="auxStep !== 1">{{'indice.bloque1.titulo' | translate}}</mat-panel-description>
+          </mat-expansion-panel-header>
+          
+          <div class="actividades">
+            <button *ngIf="!hideSemana" id="semana1">Semana 1 {{'indice.bloque1.semana1' | translate}}</button>
+            
+            <button class="button-semana bloque1" [style.width]="widthSemana1 + 'px'" (click)="goToActivities(1)">
+              <p class="semana">Semana 1</p>
+              <p class="titulo-semana">{{'indice.bloque1.semana1' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque1" [style.width]="widthSemana2 + 'px'" (click)="goToActivities(2)">
+              <p class="semana">Semana 2</p>
+              <p class="titulo-semana">{{'indice.bloque1.semana2' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque1" [style.width]="widthSemana3 + 'px'" (click)="goToActivities(3)">
+              <p class="semana">Semana 3</p>
+              <p class="titulo-semana">{{'indice.bloque1.semana3' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque1" [style.width]="widthSemana4 + 'px'" (click)="goToActivities(4)">
+              <p class="semana">Semana 4</p>
+              <p class="titulo-semana">{{'indice.bloque1.semana4' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque1" [style.width]="widthSemana5 + 'px'" (click)="goToActivities(5)">
+              <p class="semana">Semana 5</p>
+              <p class="titulo-semana">{{'indice.bloque1.semana5' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque1" [style.width]="widthSemana6 + 'px'" (click)="goToActivities(6)">
+              <p class="semana">Semana 6</p>
+              <p class="titulo-semana">{{'indice.bloque1.semana6' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque1" [style.width]="widthSemana7 + 'px'" (click)="goToActivities(7)">
+              <p class="semana">Semana 7</p>
+              <p class="titulo-semana">{{'indice.bloque1.semana7' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque1" [style.width]="widthSemana8 + 'px'" (click)="goToActivities(8)">
+              <p class="semana">Semana 8</p>
+              <p class="titulo-semana">{{'indice.bloque1.semana8' | translate}}</p>
+            </button>
+          </div>
+        </mat-expansion-panel>
+      
+        <!--  Bloque 2  -->
+        <mat-expansion-panel [expanded]="step === 2" hideToggle>
+          <mat-expansion-panel-header (click)="setStep(2)">
+            <mat-panel-title>
+              <div class="blockColor2">
+                <p class="b">B</p>
+                <p class="loque">loque 2</p>
+              </div>
+              <div class="cuadroB b2"></div>
+              <div class="cuadroLoque b2"></div>
+            </mat-panel-title>
+            <mat-panel-description *ngIf="auxStep !== 2">{{'indice.bloque2.titulo' | translate}}</mat-panel-description>
+          </mat-expansion-panel-header>
+    
+          <div class="actividades">
+            <button *ngIf="!hideSemana" id="semana1">Semana 1 {{'indice.bloque2.semana1' | translate}}</button>
+
+            <button class="button-semana bloque2" [style.width]="widthSemana1 + 'px'" (click)="goToActivities(1)">
+              <p class="semana">Semana 1</p>
+              <p class="titulo-semana">{{'indice.bloque2.semana1' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque2" [style.width]="widthSemana2 + 'px'" (click)="goToActivities(2)">
+              <p class="semana">Semana 2</p>
+              <p class="titulo-semana">{{'indice.bloque2.semana2' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque2" [style.width]="widthSemana3 + 'px'" (click)="goToActivities(3)">
+              <p class="semana">Semana 3</p>
+              <p class="titulo-semana">{{'indice.bloque2.semana3' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque2" [style.width]="widthSemana4 + 'px'" (click)="goToActivities(4)">
+              <p class="semana">Semana 4</p>
+              <p class="titulo-semana">{{'indice.bloque2.semana4' | translate}}</p>
+            </button>
+          </div>
+      
+        </mat-expansion-panel>
+    
+        <!--  Bloque 3  -->
+        <mat-expansion-panel [expanded]="step === 3" hideToggle>
+          <mat-expansion-panel-header (click)="setStep(3)">
+            <mat-panel-title>
+              <div class="blockColor2">
+                <p class="b">B</p>
+                <p class="loque">loque 3</p>
+              </div>
+              <div class="cuadroB b3"></div>
+              <div class="cuadroLoque2 b3"></div>
+            </mat-panel-title>
+            <mat-panel-description *ngIf="auxStep !== 3">{{'indice.bloque3.titulo' | translate}}</mat-panel-description>
+          </mat-expansion-panel-header>
+    
+          <div class="actividades">
+            <button *ngIf="!hideSemana" id="semana1">Semana 1 {{'indice.bloque3.semana1' | translate}}</button>
+
+            <button class="button-semana bloque3" [style.width]="widthSemana1 + 'px'" (click)="goToActivities(1)">
+              <p class="semana">Semana 1</p>
+              <p class="titulo-semana">{{'indice.bloque3.semana1' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque3" [style.width]="widthSemana2 + 'px'" (click)="goToActivities(2)">
+              <p class="semana">Semana 2</p>
+              <p class="titulo-semana">{{'indice.bloque3.semana2' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque3" [style.width]="widthSemana3 + 'px'" (click)="goToActivities(3)">
+              <p class="semana">Semana 3</p>
+              <p class="titulo-semana">{{'indice.bloque3.semana3' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque3" [style.width]="widthSemana4 + 'px'" (click)="goToActivities(4)">
+              <p class="semana">Semana 4</p>
+              <p class="titulo-semana">{{'indice.bloque3.semana4' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque3" [style.width]="widthSemana5 + 'px'" (click)="goToActivities(5)">
+              <p class="semana">Semana 5</p>
+              <p class="titulo-semana">{{'indice.bloque3.semana5' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque3" [style.width]="widthSemana6 + 'px'" (click)="goToActivities(6)">
+              <p class="semana">Semana 6</p>
+              <p class="titulo-semana">{{'indice.bloque3.semana6' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque3" [style.width]="widthSemana7 + 'px'" (click)="goToActivities(7)">
+              <p class="semana">Semana 7</p>
+              <p class="titulo-semana">{{'indice.bloque3.semana7' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque3" [style.width]="widthSemana8 + 'px'" (click)="goToActivities(8)">
+              <p class="semana">Semana 8</p>
+              <p class="titulo-semana">{{'indice.bloque3.semana8' | translate}}</p>
+            </button>
+          </div>
+      
+        </mat-expansion-panel>
+      
+        <!--  Bloque 4  -->
+        <mat-expansion-panel [expanded]="step === 4" hideToggle>
+          <mat-expansion-panel-header (click)="setStep(4)">
+            <mat-panel-title>
+              <div class="blockColor2">
+                <p class="b">B</p>
+                <p class="loque">loque 4</p>
+              </div>
+              <div class="cuadroB b4"></div>
+              <div class="cuadroLoque2 b4"></div>
+            </mat-panel-title>
+            <mat-panel-description *ngIf="auxStep !== 4">{{'indice.bloque4.titulo' | translate}}</mat-panel-description>
+          </mat-expansion-panel-header>
+    
+          <div class="actividades">
+            <button *ngIf="!hideSemana" id="semana1">Semana 1 {{'indice.bloque4.semana1' | translate}}</button>
+
+            <button class="button-semana bloque4" [style.width]="widthSemana1 + 'px'" (click)="goToActivities(1)">
+              <p class="semana">Semana 1</p>
+              <p class="titulo-semana">{{'indice.bloque4.semana1' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque4" [style.width]="widthSemana2 + 'px'" (click)="goToActivities(2)">
+              <p class="semana">Semana 2</p>
+              <p class="titulo-semana">{{'indice.bloque4.semana2' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque4" [style.width]="widthSemana3 + 'px'" (click)="goToActivities(3)">
+              <p class="semana">Semana 3</p>
+              <p class="titulo-semana">{{'indice.bloque4.semana3' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque4" [style.width]="widthSemana4 + 'px'" (click)="goToActivities(4)">
+              <p class="semana">Semana 4</p>
+              <p class="titulo-semana">{{'indice.bloque4.semana4' | translate}}</p>
+            </button>
+          </div>
+      
+        </mat-expansion-panel>
+    
+        <!--  Bloque 5  -->
+        <mat-expansion-panel [expanded]="step === 5" hideToggle>
+          <mat-expansion-panel-header (click)="setStep(5)">
+            <mat-panel-title><div class="blockColor2">
+              <p class="b">B</p>
+              <p class="loque">loque 5</p>
+            </div>
+            <div class="cuadroB b5"></div>
+            <div class="cuadroLoque2 b5"></div>
+          </mat-panel-title>
+            <mat-panel-description *ngIf="auxStep !== 5">{{'indice.bloque5.titulo' | translate}}</mat-panel-description>
+          </mat-expansion-panel-header>
+      
+          <div class="actividades">
+            <button *ngIf="!hideSemana" id="semana1">Semana 1 {{'indice.bloque5.semana1' | translate}}</button>
+
+            <button class="button-semana bloque5" [style.width]="widthSemana1 + 'px'" (click)="goToActivities(1)">
+              <p class="semana">Semana 1</p>
+              <p class="titulo-semana">{{'indice.bloque5.semana1' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque5" [style.width]="widthSemana2 + 'px'" (click)="goToActivities(2)">
+              <p class="semana">Semana 2</p>
+              <p class="titulo-semana">{{'indice.bloque5.semana2' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque5" [style.width]="widthSemana3 + 'px'" (click)="goToActivities(3)">
+              <p class="semana">Semana 3</p>
+              <p class="titulo-semana">{{'indice.bloque5.semana3' | translate}}</p>
+            </button>
+            <br>
+            <button class="button-semana bloque5" [style.width]="widthSemana4 + 'px'" (click)="goToActivities(4)">
+              <p class="semana">Semana 4</p>
+              <p class="titulo-semana">{{'indice.bloque5.semana4' | translate}}</p>
+            </button>
+          </div>
+      
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  
+    <div id="content_right" class="col">
+      <!--  Titulo  -->
+      <div *ngIf="userBlock != 0">
+        <p id="title-libro{{userBook}}-block{{userBlock}}" class="titulo">{{'indice.bloque' + userBlock + '.titulo' | translate}}</p>
+        <p class="por">{{'indice.bloque' + userBlock + '.por' | translate}}</p>
+        <div class="image_block">
+          <img class="content_image_block" [src]="srcImage" alt="Imagen">
+        </div>
+      </div>
+
+      <!--  Imagen  -->
+      <div *ngIf="userBlock == 0"class="image">
+        <img class="content_image" [src]="srcImage" alt="Imagen">
+      </div>
+
+      <div class="glosarioValores" *ngIf="userBlock != 0">
+        <!--  Subtitulo  -->
+        <p id="subtitle-libro{{userBook}}-block{{userBlock}}" class="valor subtitulo_1">{{'indice.bloque' + userBlock + '.subtitulo_1' | translate}}</p>
+        <p id="subtitle-libro{{userBook}}-block{{userBlock}}" class="valor subtitulo_2" matTooltip="{{'indice.bloque' + userBlock + '.glosario.subtitulo' | translate }}" [matTooltipDisabled]="tooltipVisible(2)">{{'indice.bloque' + userBlock + '.subtitulo_2' | translate}}</p>
+        <p id="subtitle-libro{{userBook}}-block{{userBlock}}" class="valor subtitulo_3">{{'indice.bloque' + userBlock + '.subtitulo_3' | translate}}</p>
+        <br>
+
+        <!--  Valor 1  -->
+        <p class="valor valor1_1">{{'indice.bloque' + userBlock + '.valor1_1' | translate}}</p>
+        <p class="valor valor1_2" matTooltipClass="tooltip" matTooltip="{{'indice.bloque' + userBlock + '.glosario.valor1' | translate }}">{{'indice.bloque' + userBlock + '.valor1_2' | translate}}</p>
+        <p class="valor valor1_3">{{'indice.bloque' + userBlock + '.valor1_3' | translate}}</p>
+        <br>
+
+        <!--  Valor 2  -->
+        <p class="valor valor2_1">{{'indice.bloque' + userBlock + '.valor2_1' | translate}}</p>
+        <p class="valor valor2_2" matTooltip="{{'indice.bloque' + userBlock + '.glosario.valor2' | translate }}" [matTooltipDisabled]="tooltipVisible(2)">{{'indice.bloque' + userBlock + '.valor2_2' | translate}}</p>
+        <p class="valor valor2_3">{{'indice.bloque' + userBlock + '.valor2_3' | translate}}</p>
+        <br>
+
+        <!--  Valor 3  -->
+        <p class="valor valor3_1">{{'indice.bloque' + userBlock + '.valor3_1' | translate}}</p>
+        <p class="valor valor3_2" matTooltip="{{'indice.bloque' + userBlock + '.glosario.valor3' | translate }}" [matTooltipDisabled]="tooltipVisible(2)">{{'indice.bloque' + userBlock + '.valor3_2' | translate}}</p>
+        <p class="valor valor3_3">{{'indice.bloque' + userBlock + '.valor3_3' | translate}}</p>
+        <br>
+
+      </div>
+    </div>
+  </div>  

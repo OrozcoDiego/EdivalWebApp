@@ -1,0 +1,81 @@
+<div class="row"><app-cambiar-pagina></app-cambiar-pagina></div>
+<div class="row">
+  <div id="content_left" class="col">
+    <app-lectura 
+      [titulo]="titulo"
+      [colorTitulo]="colorTitulo"
+      [foco1]="foco1"
+      [foco2]="foco2"
+      [colorFoco]="colorFoco"
+      [imagen]="imagen"
+      [lectura]="lectura">
+    </app-lectura>
+  </div>
+  <div id="content_right" class="col">
+    <app-actividad-titulo
+      [titulo]="actividadTitulo"
+      [imagen]="acctividadImagen">
+    </app-actividad-titulo>
+
+    <app-lapicito
+      [bloque]="bloque"
+      [texto]="actividad_1">
+    </app-lapicito>        
+
+    <p><b>1.</b> Reconocer que alguien es bueno en algo significa…</p>
+    <mat-button-toggle-group class="contenedor" name="favoriteColor" aria-label="Favorite Color">
+      <mat-button-toggle value="red" class="columna">
+        <img class="actividad_imagen" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_2/Actividad1-1.png" alt="Imagen">
+          Tristeza
+      </mat-button-toggle>
+      <mat-button-toggle value="green" class="columna-centro">
+        <img class="actividad_imagen" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_2/Actividad1-2.png" alt="Imagen">
+          Enojo
+      </mat-button-toggle>
+      <mat-button-toggle value="blue" class="columna">
+        <img class="actividad_imagen" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_2/Actividad1-3.png" alt="Imagen">
+          Felicidad
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <br>
+
+    <p><b>2.</b> Hacer trampa para lograr lo que quieres, habla de una acción…</p>
+    <mat-button-toggle-group class="contenedor" name="favoriteColor" aria-label="Favorite Color">
+      <mat-button-toggle value="red" class="columna">
+        <img class="actividad_imagen" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_2/Actividad2-1.png" alt="Imagen">
+        Mala
+      </mat-button-toggle>
+      <mat-button-toggle value="green" class="columna-centro">
+        <img class="actividad_imagen" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_2/Actividad2-2.png" alt="Imagen">
+        Regular
+      </mat-button-toggle>
+      <mat-button-toggle value="blue" class="columna">
+        <img class="actividad_imagen" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_2/Actividad2-3.png" alt="Imagen">
+        Buena
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <br>
+
+    <p><b>3.</b> Al hacer trampa nuestra familia, amigos y compañeros se sentirán…</p>
+    <mat-button-toggle-group class="contenedor" name="favoriteColor" aria-label="Favorite Color">
+      <mat-button-toggle value="red" class="columna">
+        <img class="actividad_imagen" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_2/Actividad3-1.png" alt="Imagen">
+        Orgullosos
+      </mat-button-toggle>
+      <mat-button-toggle value="green" class="columna-centro">
+        <img class="actividad_imagen" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_2/Actividad3-2.png" alt="Imagen">
+        Preocupados
+      </mat-button-toggle>
+      <mat-button-toggle value="blue" class="columna">
+        <img class="actividad_imagen" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_2/Actividad3-3.png" alt="Imagen">
+        Tristes
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  
+    <br>
+    
+    <p>Soy sincero conmigo y con los demás</p>
+  </div>
+</div>

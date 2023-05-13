@@ -1,0 +1,72 @@
+<div class="row"><app-cambiar-pagina></app-cambiar-pagina></div>
+<div class="row">
+  <div id="content_left" class="col">
+    <app-lectura 
+      [titulo]="titulo"
+      [colorTitulo]="colorTitulo"
+      [foco1]="foco1"
+      [foco2]="foco2"
+      [colorFoco]="colorFoco"
+      [imagen]="imagen"
+      [lectura]="lectura">
+    </app-lectura>
+  </div>
+  <div id="content_right" class="col">
+    <app-actividad-titulo
+      [titulo]="actividadTitulo"
+      [imagen]="acctividadImagen">
+    </app-actividad-titulo>
+
+    <app-lapicito
+      [bloque]="bloque"
+      [texto]="actividad_1">
+    </app-lapicito>   
+
+    <p>Une con una línea al niño con el globo que corresponda.</p>
+
+    <table>
+      <tr>
+        <td>
+          No realizó tarea…
+        </td>
+        <td>
+          Se sintieron felices y agradecidos.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Ayudó a un amigo…
+        </td>
+        <td>
+          Ya no le creyeron, ni quisieron jugar con él.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Hizo trampa en el juego…
+        </td>
+        <td>
+          Encontró lo que buscaba con mayor facilidad.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Ayudó en casa…
+        </td>
+        <td>
+          Todos los felicitaron.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Ordenó su lugar de trabajo…
+        </td>
+        <td>
+          Se quedó sin receso.
+        </td>
+      </tr>
+    </table>
+
+    <p>Soy sincero porque soy valiente</p>
+  </div>
+</div>

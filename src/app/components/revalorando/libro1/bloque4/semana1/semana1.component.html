@@ -1,0 +1,94 @@
+
+<div class="row"><app-cambiar-pagina></app-cambiar-pagina></div>
+<div class="row">
+  <div id="content_left" class="col">
+    <app-lectura 
+      [titulo]="titulo"
+      [colorTitulo]="colorTitulo"
+      [foco1]="foco1"
+      [foco2]="foco2"
+      [colorFoco]="colorFoco"
+      [imagen]="imagen"
+      [lectura]="lectura">
+    </app-lectura>
+  </div>
+  <div id="content_right" class="col">
+    <app-actividad-titulo
+      [titulo]="actividadTitulo"
+      [imagen]="acctividadImagen">
+    </app-actividad-titulo>
+    
+    <app-lapicito
+      [bloque]="bloque"
+      [texto]="actividad_1">
+    </app-lapicito>
+
+    <br>
+
+    <table>
+      <tr>
+        <td class="table-style-left table-celda"><b>1.</b> Si hago trampa en un juego…</td>
+        <td class="table-style-right table-celda">
+          <mat-radio-group aria-labelledby="radio-group-label" class="example-radio-group">
+            <mat-radio-button class="radio-button" value="1">Ya no van a querer jugar conmigo.</mat-radio-button>
+            <mat-radio-button class="radio-button" value="2">Se van a molestar conmigo.</mat-radio-button>
+            <mat-radio-button class="radio-button" value="3">No pasa nada, gano más.</mat-radio-button>
+          </mat-radio-group>
+        </td>
+      </tr>
+      <tr>
+        <td class="table-celda"><b>2.</b> Si me dejo convencer para hacer algo incorrecto…</td>
+        <td class="table-celda">
+          <mat-radio-group aria-labelledby="radio-group-label" class="example-radio-group">
+            <mat-radio-button class="radio-button" value="1">Recibiré un castigo.</mat-radio-button>
+            <mat-radio-button class="radio-button" value="2">Ganaré más amigos.</mat-radio-button>
+            <mat-radio-button class="radio-button" value="3">Fallaré a mis valores.</mat-radio-button>
+          </mat-radio-group>
+        </td>
+      </tr>
+      <tr>
+        <td class="table-style-left table-celda"><b>3.</b> Cuando digo la verdad me siento…</td>
+        <td class="table-style-right table-celda">
+          <mat-radio-group aria-labelledby="radio-group-label" class="example-radio-group">
+            <mat-radio-button class="radio-button" value="1">Feliz y orgulloso.</mat-radio-button>
+            <mat-radio-button class="radio-button" value="2">Enojado y triste.</mat-radio-button>
+            <mat-radio-button class="radio-button" value="3">Satisfecho conmigo mismo.</mat-radio-button>
+          </mat-radio-group>
+      </tr>
+    </table>
+
+    <br><br>
+
+    <app-lapicito
+      [bloque]="bloque"
+      [texto]="actividad_2">
+    </app-lapicito>
+
+    <br>
+
+    <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event, 'honestidad')">
+      <div class="example-box" *ngFor="let silabas1 of honestidad" cdkDrag>{{silabas1}}</div>
+    </div>
+
+    <br><br>
+
+    <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event, 'sinceridad')">
+      <div class="example-box" *ngFor="let silabas2 of sinceridad" cdkDrag>{{silabas2}}</div>
+    </div>
+
+    <br><br>
+
+    <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event, 'lealtad')">
+      <div class="example-box" *ngFor="let silabas3 of lealtad" cdkDrag>{{silabas3}}</div>
+    </div>
+
+    <br><br>
+    
+    <div class="frase-final">
+      <p class="frase_pie_de_pagina">Hablo y actúo con sinceridad</p>
+      <img class="actividad2_image" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_1/ValentinaLapiz1.png" alt="Imagen">
+      <div class="cuadro_frase_pie_de_pagina"></div>
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="row"><app-cambiar-pagina></app-cambiar-pagina></div>
+<div class="row">
+  <div id="content_left" class="col">
+    <app-lectura 
+      [titulo]="titulo"
+      [colorTitulo]="colorTitulo"
+      [foco1]="foco1"
+      [foco2]="foco2"
+      [colorFoco]="colorFoco"
+      [imagen]="imagen"
+      [lectura]="lectura">
+    </app-lectura>
+  </div>
+  <div id="content_right" class="col">
+    <app-actividad-titulo
+      [titulo]="actividadTitulo"
+      [imagen]="acctividadImagen">
+    </app-actividad-titulo>
+    
+    <app-lapicito
+      [bloque]="bloque"
+      [texto]="actividad_1">
+    </app-lapicito>
+
+    <app-lapicito
+      [bloque]="bloque"
+      [texto]="actividad_2">
+    </app-lapicito>
+    
+  </div>
+</div>

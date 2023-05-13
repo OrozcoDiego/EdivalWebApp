@@ -1,0 +1,42 @@
+<div class="row"><app-cambiar-pagina></app-cambiar-pagina></div>
+<div class="row">
+  <div id="content_left" class="col">
+    <app-lectura 
+      [titulo]="titulo"
+      [colorTitulo]="colorTitulo"
+      [foco1]="foco1"
+      [foco2]="foco2"
+      [colorFoco]="colorFoco"
+      [imagen]="imagen"
+      [lectura]="lectura">
+    </app-lectura>
+  </div>
+  <div id="content_right" class="col">
+    <app-actividad-titulo
+      [titulo]="actividadTitulo"
+      [imagen]="acctividadImagen">
+    </app-actividad-titulo>
+
+    <app-lapicito
+      [bloque]="bloque"
+      [texto]="actividad_1">
+    </app-lapicito>
+
+    <div class="example-boundary">
+      <img class="actividad_imagen" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_4/Actividad.PNG" alt="Imagen">
+      <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>
+        <div>No hago trampa</div>
+        <img class="manzana" src="../../../../../../assets/images/Revalorando/Libro_1/Bloque_4/Semana_4/Actividad1.PNG" alt="Imagen">
+      </div>
+      <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>No hago trampa</div>
+      <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>Me enojo cuando pierdo</div>
+      <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>Miento</div>
+      <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>Digo la verdad</div>
+      <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>Me burlo de mis amigos</div>
+      <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>Regreso lo que no es mío</div>
+      <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>Reconozco cuando me equivoco</div>
+    </div>
+  
+    <p>La sinceridad buenas amistades me dará</p>
+  </div>
+</div>

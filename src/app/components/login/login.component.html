@@ -1,0 +1,47 @@
+<!--<img class="image" src="../../assets/images/login/Picture.png">-->
+<div class="image">
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWBB9waNJ2iu_c3_bbf_Pfy7ddMC1rvnBFQ&usqp=CAU" class="img-fluid" alt="...">
+            </div>
+            <div id="user_data" class="col">
+                <div class="card-body p-5 shadow-5 text-center">
+                    <h1>Inicia Sesión</h1>
+    
+                    <br>
+        
+                    <mat-form-field appearance="outline">
+                        <mat-label>Usuario</mat-label>
+                        <input matInput [(ngModel)]="user" (ngModelChange)="changeUser($event)" aria-label="Usuario">
+                    </mat-form-field>
+                    
+                    <br>
+                    <!--
+                    <mat-form-field appearance="outline">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput [(ngModel)]="password" (ngModelChange)="changePassword($event)" aria-label="Contraseña">
+                    </mat-form-field>
+                    -->
+                    <mat-form-field appearance="outline">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput [type]="showPassword ? 'text' : 'password'" [(ngModel)]="password" (ngModelChange)="changePassword($event)" aria-label="Contraseña">
+                        <mat-icon matSuffix (click)="togglePasswordVisibility()">{{showPassword?'visibility_off':'visibility'}}</mat-icon>
+                    </mat-form-field>
+                        
+                    <br>
+
+                    <p *ngIf="invalidUser">Usuario o Contraseña invalidos</p>
+                    
+                    <button mat-button [disabled]="hideLoginButton" class="button" (click)="getData()">Iniciar</button>
+                    <!--<button mat-button [disabled]="hideLoginButton" [routerLink]="'/home'" class="button" (click)="getData()">Iniciar</button>-->
+                </div>
+                <!--<img src="../../assets/images/login/Picture1.png">-->
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+    

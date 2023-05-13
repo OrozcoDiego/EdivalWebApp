@@ -1,0 +1,254 @@
+<div class="container-fluid">
+  <div id="main-navbar" class="row">
+    <div class="navbar">
+        <img src="../../assets/images/edival/EDIVAL-LOGO.png" class="logo" alt="Imagen">
+        <span>My App</span>
+        <span class="example-spacer"></span>
+
+        <!--  Navbar Alumno  -->
+        <mat-button-toggle-group *ngIf="userType == 1" class="navbar-toggle-group" value="Índice">
+          <mat-button-toggle class="button-toggle" value="Índice" (click)="clickButtonToggle(1)">Índice Alumnos</mat-button-toggle>
+          <mat-button-toggle class="button-toggle" (click)="clickButtonToggle(2)">Tareas</mat-button-toggle>
+        </mat-button-toggle-group>
+
+        <!--  Navbar Maestro  -->
+        <mat-button-toggle-group *ngIf="userType == 2" class="navbar-toggle-group" value="Índice">
+          <mat-button-toggle class="button-toggle" value="Índice" (click)="clickButtonToggle(3)">Índice Maestros</mat-button-toggle>
+          <mat-button-toggle class="button-toggle" (click)="clickButtonToggle(4)">Calendario</mat-button-toggle>
+          <mat-button-toggle class="button-toggle" (click)="clickButtonToggle(5)">Evaluación</mat-button-toggle>
+          <mat-button-toggle class="button-toggle" (click)="clickButtonToggle(6)">Alumnos</mat-button-toggle>
+        </mat-button-toggle-group>
+      
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon class="user_icon">account_circle</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item [routerLink]="'/login'">
+            <mat-icon>exit_to_app</mat-icon>
+            <span>Cerrar Sesión</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+          </button>
+        </mat-menu>
+    </div>
+  </div>
+  <div id="main-content" class="row">
+    <div class="col">
+      <div id="content" class="card mx-4 mx-md-5 shadow-5-strong">
+
+        <!--   Índece   -->
+        <div class="indice" *ngIf="pageContent == 1">
+          <app-indice></app-indice>
+        </div>
+
+        <!--   Actividad   -->
+        <div class="indice" *ngIf="pageContent == 7">
+          <container-element [ngSwitch]="componentActivity">
+            <app-libro1-bloque1-semana1 *ngSwitchCase="'app-libro1-bloque1-semana1'"></app-libro1-bloque1-semana1>
+            <app-libro1-bloque1-semana2 *ngSwitchCase="'app-libro1-bloque1-semana2'"></app-libro1-bloque1-semana2>
+            <app-libro1-bloque1-semana3 *ngSwitchCase="'app-libro1-bloque1-semana3'"></app-libro1-bloque1-semana3>
+            <app-libro1-bloque1-semana4 *ngSwitchCase="'app-libro1-bloque1-semana4'"></app-libro1-bloque1-semana4>
+            <app-libro1-bloque1-semana5 *ngSwitchCase="'app-libro1-bloque1-semana5'"></app-libro1-bloque1-semana5>
+            <app-libro1-bloque1-semana6 *ngSwitchCase="'app-libro1-bloque1-semana6'"></app-libro1-bloque1-semana6>
+            <app-libro1-bloque1-semana7 *ngSwitchCase="'app-libro1-bloque1-semana7'"></app-libro1-bloque1-semana7>
+            <app-libro1-bloque1-semana8 *ngSwitchCase="'app-libro1-bloque1-semana8'"></app-libro1-bloque1-semana8>
+            <app-libro1-bloque2-semana1 *ngSwitchCase="'app-libro1-bloque2-semana1'"></app-libro1-bloque2-semana1>
+            <app-libro1-bloque2-semana2 *ngSwitchCase="'app-libro1-bloque2-semana2'"></app-libro1-bloque2-semana2>
+            <app-libro1-bloque2-semana3 *ngSwitchCase="'app-libro1-bloque2-semana3'"></app-libro1-bloque2-semana3>
+            <app-libro1-bloque2-semana4 *ngSwitchCase="'app-libro1-bloque2-semana4'"></app-libro1-bloque2-semana4>
+            <app-libro1-bloque3-semana1 *ngSwitchCase="'app-libro1-bloque3-semana1'"></app-libro1-bloque3-semana1>
+            <app-libro1-bloque3-semana2 *ngSwitchCase="'app-libro1-bloque3-semana2'"></app-libro1-bloque3-semana2>
+            <app-libro1-bloque3-semana3 *ngSwitchCase="'app-libro1-bloque3-semana3'"></app-libro1-bloque3-semana3>
+            <app-libro1-bloque3-semana4 *ngSwitchCase="'app-libro1-bloque3-semana4'"></app-libro1-bloque3-semana4>
+            <app-libro1-bloque3-semana5 *ngSwitchCase="'app-libro1-bloque3-semana5'"></app-libro1-bloque3-semana5>
+            <app-libro1-bloque3-semana6 *ngSwitchCase="'app-libro1-bloque3-semana6'"></app-libro1-bloque3-semana6>
+            <app-libro1-bloque3-semana7 *ngSwitchCase="'app-libro1-bloque3-semana7'"></app-libro1-bloque3-semana7>
+            <app-libro1-bloque3-semana8 *ngSwitchCase="'app-libro1-bloque3-semana8'"></app-libro1-bloque3-semana8>
+            <app-libro1-bloque4-semana1 *ngSwitchCase="'app-libro1-bloque4-semana1'"></app-libro1-bloque4-semana1>
+            <app-libro1-bloque4-semana2 *ngSwitchCase="'app-libro1-bloque4-semana2'"></app-libro1-bloque4-semana2>
+            <app-libro1-bloque4-semana3 *ngSwitchCase="'app-libro1-bloque4-semana3'"></app-libro1-bloque4-semana3>
+            <app-libro1-bloque4-semana4 *ngSwitchCase="'app-libro1-bloque4-semana4'"></app-libro1-bloque4-semana4>
+            <app-libro1-bloque5-semana1 *ngSwitchCase="'app-libro1-bloque5-semana1'"></app-libro1-bloque5-semana1>
+            <app-libro1-bloque5-semana2 *ngSwitchCase="'app-libro1-bloque5-semana2'"></app-libro1-bloque5-semana2>
+            <app-libro1-bloque5-semana3 *ngSwitchCase="'app-libro1-bloque5-semana3'"></app-libro1-bloque5-semana3>
+            <app-libro1-bloque5-semana4 *ngSwitchCase="'app-libro1-bloque5-semana4'"></app-libro1-bloque5-semana4>
+
+            <app-libro2-bloque1-semana1 *ngSwitchCase="'app-libro2-bloque1-semana1'"></app-libro2-bloque1-semana1>
+            <app-libro2-bloque1-semana2 *ngSwitchCase="'app-libro2-bloque1-semana2'"></app-libro2-bloque1-semana2>
+            <app-libro2-bloque1-semana3 *ngSwitchCase="'app-libro2-bloque1-semana3'"></app-libro2-bloque1-semana3>
+            <app-libro2-bloque1-semana4 *ngSwitchCase="'app-libro2-bloque1-semana4'"></app-libro2-bloque1-semana4>
+            <app-libro2-bloque1-semana5 *ngSwitchCase="'app-libro2-bloque1-semana5'"></app-libro2-bloque1-semana5>
+            <app-libro2-bloque1-semana6 *ngSwitchCase="'app-libro2-bloque1-semana6'"></app-libro2-bloque1-semana6>
+            <app-libro2-bloque1-semana7 *ngSwitchCase="'app-libro2-bloque1-semana7'"></app-libro2-bloque1-semana7>
+            <app-libro2-bloque1-semana8 *ngSwitchCase="'app-libro2-bloque1-semana8'"></app-libro2-bloque1-semana8>
+            <app-libro2-bloque2-semana1 *ngSwitchCase="'app-libro2-bloque2-semana1'"></app-libro2-bloque2-semana1>
+            <app-libro2-bloque2-semana2 *ngSwitchCase="'app-libro2-bloque2-semana2'"></app-libro2-bloque2-semana2>
+            <app-libro2-bloque2-semana3 *ngSwitchCase="'app-libro2-bloque2-semana3'"></app-libro2-bloque2-semana3>
+            <app-libro2-bloque2-semana4 *ngSwitchCase="'app-libro2-bloque2-semana4'"></app-libro2-bloque2-semana4>
+            <app-libro2-bloque3-semana1 *ngSwitchCase="'app-libro2-bloque3-semana1'"></app-libro2-bloque3-semana1>
+            <app-libro2-bloque3-semana2 *ngSwitchCase="'app-libro2-bloque3-semana2'"></app-libro2-bloque3-semana2>
+            <app-libro2-bloque3-semana3 *ngSwitchCase="'app-libro2-bloque3-semana3'"></app-libro2-bloque3-semana3>
+            <app-libro2-bloque3-semana4 *ngSwitchCase="'app-libro2-bloque3-semana4'"></app-libro2-bloque3-semana4>
+            <app-libro2-bloque3-semana5 *ngSwitchCase="'app-libro2-bloque3-semana5'"></app-libro2-bloque3-semana5>
+            <app-libro2-bloque3-semana6 *ngSwitchCase="'app-libro2-bloque3-semana6'"></app-libro2-bloque3-semana6>
+            <app-libro2-bloque3-semana7 *ngSwitchCase="'app-libro2-bloque3-semana7'"></app-libro2-bloque3-semana7>
+            <app-libro2-bloque3-semana8 *ngSwitchCase="'app-libro2-bloque3-semana8'"></app-libro2-bloque3-semana8>
+            <app-libro2-bloque4-semana1 *ngSwitchCase="'app-libro2-bloque4-semana1'"></app-libro2-bloque4-semana1>
+            <app-libro2-bloque4-semana2 *ngSwitchCase="'app-libro2-bloque4-semana2'"></app-libro2-bloque4-semana2>
+            <app-libro2-bloque4-semana3 *ngSwitchCase="'app-libro2-bloque4-semana3'"></app-libro2-bloque4-semana3>
+            <app-libro2-bloque4-semana4 *ngSwitchCase="'app-libro2-bloque4-semana4'"></app-libro2-bloque4-semana4>
+            <app-libro2-bloque5-semana1 *ngSwitchCase="'app-libro2-bloque5-semana1'"></app-libro2-bloque5-semana1>
+            <app-libro2-bloque5-semana2 *ngSwitchCase="'app-libro2-bloque5-semana2'"></app-libro2-bloque5-semana2>
+            <app-libro2-bloque5-semana3 *ngSwitchCase="'app-libro2-bloque5-semana3'"></app-libro2-bloque5-semana3>
+            <app-libro2-bloque5-semana4 *ngSwitchCase="'app-libro2-bloque5-semana4'"></app-libro2-bloque5-semana4>
+
+            <app-libro3-bloque1-semana1 *ngSwitchCase="'app-libro3-bloque1-semana1'"></app-libro3-bloque1-semana1>
+            <app-libro3-bloque1-semana2 *ngSwitchCase="'app-libro3-bloque1-semana2'"></app-libro3-bloque1-semana2>
+            <app-libro3-bloque1-semana3 *ngSwitchCase="'app-libro3-bloque1-semana3'"></app-libro3-bloque1-semana3>
+            <app-libro3-bloque1-semana4 *ngSwitchCase="'app-libro3-bloque1-semana4'"></app-libro3-bloque1-semana4>
+            <app-libro3-bloque1-semana5 *ngSwitchCase="'app-libro3-bloque1-semana5'"></app-libro3-bloque1-semana5>
+            <app-libro3-bloque1-semana6 *ngSwitchCase="'app-libro3-bloque1-semana6'"></app-libro3-bloque1-semana6>
+            <app-libro3-bloque1-semana7 *ngSwitchCase="'app-libro3-bloque1-semana7'"></app-libro3-bloque1-semana7>
+            <app-libro3-bloque1-semana8 *ngSwitchCase="'app-libro3-bloque1-semana8'"></app-libro3-bloque1-semana8>
+            <app-libro3-bloque2-semana1 *ngSwitchCase="'app-libro3-bloque2-semana1'"></app-libro3-bloque2-semana1>
+            <app-libro3-bloque2-semana2 *ngSwitchCase="'app-libro3-bloque2-semana2'"></app-libro3-bloque2-semana2>
+            <app-libro3-bloque2-semana3 *ngSwitchCase="'app-libro3-bloque2-semana3'"></app-libro3-bloque2-semana3>
+            <app-libro3-bloque2-semana4 *ngSwitchCase="'app-libro3-bloque2-semana4'"></app-libro3-bloque2-semana4>
+            <app-libro3-bloque3-semana1 *ngSwitchCase="'app-libro3-bloque3-semana1'"></app-libro3-bloque3-semana1>
+            <app-libro3-bloque3-semana2 *ngSwitchCase="'app-libro3-bloque3-semana2'"></app-libro3-bloque3-semana2>
+            <app-libro3-bloque3-semana3 *ngSwitchCase="'app-libro3-bloque3-semana3'"></app-libro3-bloque3-semana3>
+            <app-libro3-bloque3-semana4 *ngSwitchCase="'app-libro3-bloque3-semana4'"></app-libro3-bloque3-semana4>
+            <app-libro3-bloque3-semana5 *ngSwitchCase="'app-libro3-bloque3-semana5'"></app-libro3-bloque3-semana5>
+            <app-libro3-bloque3-semana6 *ngSwitchCase="'app-libro3-bloque3-semana6'"></app-libro3-bloque3-semana6>
+            <app-libro3-bloque3-semana7 *ngSwitchCase="'app-libro3-bloque3-semana7'"></app-libro3-bloque3-semana7>
+            <app-libro3-bloque3-semana8 *ngSwitchCase="'app-libro3-bloque3-semana8'"></app-libro3-bloque3-semana8>
+            <app-libro3-bloque4-semana1 *ngSwitchCase="'app-libro3-bloque4-semana1'"></app-libro3-bloque4-semana1>
+            <app-libro3-bloque4-semana2 *ngSwitchCase="'app-libro3-bloque4-semana2'"></app-libro3-bloque4-semana2>
+            <app-libro3-bloque4-semana3 *ngSwitchCase="'app-libro3-bloque4-semana3'"></app-libro3-bloque4-semana3>
+            <app-libro3-bloque4-semana4 *ngSwitchCase="'app-libro3-bloque4-semana4'"></app-libro3-bloque4-semana4>
+            <app-libro3-bloque5-semana1 *ngSwitchCase="'app-libro3-bloque5-semana1'"></app-libro3-bloque5-semana1>
+            <app-libro3-bloque5-semana2 *ngSwitchCase="'app-libro3-bloque5-semana2'"></app-libro3-bloque5-semana2>
+            <app-libro3-bloque5-semana3 *ngSwitchCase="'app-libro3-bloque5-semana3'"></app-libro3-bloque5-semana3>
+            <app-libro3-bloque5-semana4 *ngSwitchCase="'app-libro3-bloque5-semana4'"></app-libro3-bloque5-semana4>
+
+            <app-libro4-bloque1-semana1 *ngSwitchCase="'app-libro4-bloque1-semana1'"></app-libro4-bloque1-semana1>
+            <app-libro4-bloque1-semana2 *ngSwitchCase="'app-libro4-bloque1-semana2'"></app-libro4-bloque1-semana2>
+            <app-libro4-bloque1-semana3 *ngSwitchCase="'app-libro4-bloque1-semana3'"></app-libro4-bloque1-semana3>
+            <app-libro4-bloque1-semana4 *ngSwitchCase="'app-libro4-bloque1-semana4'"></app-libro4-bloque1-semana4>
+            <app-libro4-bloque1-semana5 *ngSwitchCase="'app-libro4-bloque1-semana5'"></app-libro4-bloque1-semana5>
+            <app-libro4-bloque1-semana6 *ngSwitchCase="'app-libro4-bloque1-semana6'"></app-libro4-bloque1-semana6>
+            <app-libro4-bloque1-semana7 *ngSwitchCase="'app-libro4-bloque1-semana7'"></app-libro4-bloque1-semana7>
+            <app-libro4-bloque1-semana8 *ngSwitchCase="'app-libro4-bloque1-semana8'"></app-libro4-bloque1-semana8>
+            <app-libro4-bloque2-semana1 *ngSwitchCase="'app-libro4-bloque2-semana1'"></app-libro4-bloque2-semana1>
+            <app-libro4-bloque2-semana2 *ngSwitchCase="'app-libro4-bloque2-semana2'"></app-libro4-bloque2-semana2>
+            <app-libro4-bloque2-semana3 *ngSwitchCase="'app-libro4-bloque2-semana3'"></app-libro4-bloque2-semana3>
+            <app-libro4-bloque2-semana4 *ngSwitchCase="'app-libro4-bloque2-semana4'"></app-libro4-bloque2-semana4>
+            <app-libro4-bloque3-semana1 *ngSwitchCase="'app-libro4-bloque3-semana1'"></app-libro4-bloque3-semana1>
+            <app-libro4-bloque3-semana2 *ngSwitchCase="'app-libro4-bloque3-semana2'"></app-libro4-bloque3-semana2>
+            <app-libro4-bloque3-semana3 *ngSwitchCase="'app-libro4-bloque3-semana3'"></app-libro4-bloque3-semana3>
+            <app-libro4-bloque3-semana4 *ngSwitchCase="'app-libro4-bloque3-semana4'"></app-libro4-bloque3-semana4>
+            <app-libro4-bloque3-semana5 *ngSwitchCase="'app-libro4-bloque3-semana5'"></app-libro4-bloque3-semana5>
+            <app-libro4-bloque3-semana6 *ngSwitchCase="'app-libro4-bloque3-semana6'"></app-libro4-bloque3-semana6>
+            <app-libro4-bloque3-semana7 *ngSwitchCase="'app-libro4-bloque3-semana7'"></app-libro4-bloque3-semana7>
+            <app-libro4-bloque3-semana8 *ngSwitchCase="'app-libro4-bloque3-semana8'"></app-libro4-bloque3-semana8>
+            <app-libro4-bloque4-semana1 *ngSwitchCase="'app-libro4-bloque4-semana1'"></app-libro4-bloque4-semana1>
+            <app-libro4-bloque4-semana2 *ngSwitchCase="'app-libro4-bloque4-semana2'"></app-libro4-bloque4-semana2>
+            <app-libro4-bloque4-semana3 *ngSwitchCase="'app-libro4-bloque4-semana3'"></app-libro4-bloque4-semana3>
+            <app-libro4-bloque4-semana4 *ngSwitchCase="'app-libro4-bloque4-semana4'"></app-libro4-bloque4-semana4>
+            <app-libro4-bloque5-semana1 *ngSwitchCase="'app-libro4-bloque5-semana1'"></app-libro4-bloque5-semana1>
+            <app-libro4-bloque5-semana2 *ngSwitchCase="'app-libro4-bloque5-semana2'"></app-libro4-bloque5-semana2>
+            <app-libro4-bloque5-semana3 *ngSwitchCase="'app-libro4-bloque5-semana3'"></app-libro4-bloque5-semana3>
+            <app-libro4-bloque5-semana4 *ngSwitchCase="'app-libro4-bloque5-semana4'"></app-libro4-bloque5-semana4>
+
+            <app-libro5-bloque1-semana1 *ngSwitchCase="'app-libro5-bloque1-semana1'"></app-libro5-bloque1-semana1>
+            <app-libro5-bloque1-semana2 *ngSwitchCase="'app-libro5-bloque1-semana2'"></app-libro5-bloque1-semana2>
+            <app-libro5-bloque1-semana3 *ngSwitchCase="'app-libro5-bloque1-semana3'"></app-libro5-bloque1-semana3>
+            <app-libro5-bloque1-semana4 *ngSwitchCase="'app-libro5-bloque1-semana4'"></app-libro5-bloque1-semana4>
+            <app-libro5-bloque1-semana5 *ngSwitchCase="'app-libro5-bloque1-semana5'"></app-libro5-bloque1-semana5>
+            <app-libro5-bloque1-semana6 *ngSwitchCase="'app-libro5-bloque1-semana6'"></app-libro5-bloque1-semana6>
+            <app-libro5-bloque1-semana7 *ngSwitchCase="'app-libro5-bloque1-semana7'"></app-libro5-bloque1-semana7>
+            <app-libro5-bloque1-semana8 *ngSwitchCase="'app-libro5-bloque1-semana8'"></app-libro5-bloque1-semana8>
+            <app-libro5-bloque2-semana1 *ngSwitchCase="'app-libro5-bloque2-semana1'"></app-libro5-bloque2-semana1>
+            <app-libro5-bloque2-semana2 *ngSwitchCase="'app-libro5-bloque2-semana2'"></app-libro5-bloque2-semana2>
+            <app-libro5-bloque2-semana3 *ngSwitchCase="'app-libro5-bloque2-semana3'"></app-libro5-bloque2-semana3>
+            <app-libro5-bloque2-semana4 *ngSwitchCase="'app-libro5-bloque2-semana4'"></app-libro5-bloque2-semana4>
+            <app-libro5-bloque3-semana1 *ngSwitchCase="'app-libro5-bloque3-semana1'"></app-libro5-bloque3-semana1>
+            <app-libro5-bloque3-semana2 *ngSwitchCase="'app-libro5-bloque3-semana2'"></app-libro5-bloque3-semana2>
+            <app-libro5-bloque3-semana3 *ngSwitchCase="'app-libro5-bloque3-semana3'"></app-libro5-bloque3-semana3>
+            <app-libro5-bloque3-semana4 *ngSwitchCase="'app-libro5-bloque3-semana4'"></app-libro5-bloque3-semana4>
+            <app-libro5-bloque3-semana5 *ngSwitchCase="'app-libro5-bloque3-semana5'"></app-libro5-bloque3-semana5>
+            <app-libro5-bloque3-semana6 *ngSwitchCase="'app-libro5-bloque3-semana6'"></app-libro5-bloque3-semana6>
+            <app-libro5-bloque3-semana7 *ngSwitchCase="'app-libro5-bloque3-semana7'"></app-libro5-bloque3-semana7>
+            <app-libro5-bloque3-semana8 *ngSwitchCase="'app-libro5-bloque3-semana8'"></app-libro5-bloque3-semana8>
+            <app-libro5-bloque4-semana1 *ngSwitchCase="'app-libro5-bloque4-semana1'"></app-libro5-bloque4-semana1>
+            <app-libro5-bloque4-semana2 *ngSwitchCase="'app-libro5-bloque4-semana2'"></app-libro5-bloque4-semana2>
+            <app-libro5-bloque4-semana3 *ngSwitchCase="'app-libro5-bloque4-semana3'"></app-libro5-bloque4-semana3>
+            <app-libro5-bloque4-semana4 *ngSwitchCase="'app-libro5-bloque4-semana4'"></app-libro5-bloque4-semana4>
+            <app-libro5-bloque5-semana1 *ngSwitchCase="'app-libro5-bloque5-semana1'"></app-libro5-bloque5-semana1>
+            <app-libro5-bloque5-semana2 *ngSwitchCase="'app-libro5-bloque5-semana2'"></app-libro5-bloque5-semana2>
+            <app-libro5-bloque5-semana3 *ngSwitchCase="'app-libro5-bloque5-semana3'"></app-libro5-bloque5-semana3>
+            <app-libro5-bloque5-semana4 *ngSwitchCase="'app-libro5-bloque5-semana4'"></app-libro5-bloque5-semana4>
+
+            <app-libro6-bloque1-semana1 *ngSwitchCase="'app-libro6-bloque1-semana1'"></app-libro6-bloque1-semana1>
+            <app-libro6-bloque1-semana2 *ngSwitchCase="'app-libro6-bloque1-semana2'"></app-libro6-bloque1-semana2>
+            <app-libro6-bloque1-semana3 *ngSwitchCase="'app-libro6-bloque1-semana3'"></app-libro6-bloque1-semana3>
+            <app-libro6-bloque1-semana4 *ngSwitchCase="'app-libro6-bloque1-semana4'"></app-libro6-bloque1-semana4>
+            <app-libro6-bloque1-semana5 *ngSwitchCase="'app-libro6-bloque1-semana5'"></app-libro6-bloque1-semana5>
+            <app-libro6-bloque1-semana6 *ngSwitchCase="'app-libro6-bloque1-semana6'"></app-libro6-bloque1-semana6>
+            <app-libro6-bloque1-semana7 *ngSwitchCase="'app-libro6-bloque1-semana7'"></app-libro6-bloque1-semana7>
+            <app-libro6-bloque1-semana8 *ngSwitchCase="'app-libro6-bloque1-semana8'"></app-libro6-bloque1-semana8>
+            <app-libro6-bloque2-semana1 *ngSwitchCase="'app-libro6-bloque2-semana1'"></app-libro6-bloque2-semana1>
+            <app-libro6-bloque2-semana2 *ngSwitchCase="'app-libro6-bloque2-semana2'"></app-libro6-bloque2-semana2>
+            <app-libro6-bloque2-semana3 *ngSwitchCase="'app-libro6-bloque2-semana3'"></app-libro6-bloque2-semana3>
+            <app-libro6-bloque2-semana4 *ngSwitchCase="'app-libro6-bloque2-semana4'"></app-libro6-bloque2-semana4>
+            <app-libro6-bloque3-semana1 *ngSwitchCase="'app-libro6-bloque3-semana1'"></app-libro6-bloque3-semana1>
+            <app-libro6-bloque3-semana2 *ngSwitchCase="'app-libro6-bloque3-semana2'"></app-libro6-bloque3-semana2>
+            <app-libro6-bloque3-semana3 *ngSwitchCase="'app-libro6-bloque3-semana3'"></app-libro6-bloque3-semana3>
+            <app-libro6-bloque3-semana4 *ngSwitchCase="'app-libro6-bloque3-semana4'"></app-libro6-bloque3-semana4>
+            <app-libro6-bloque3-semana5 *ngSwitchCase="'app-libro6-bloque3-semana5'"></app-libro6-bloque3-semana5>
+            <app-libro6-bloque3-semana6 *ngSwitchCase="'app-libro6-bloque3-semana6'"></app-libro6-bloque3-semana6>
+            <app-libro6-bloque3-semana7 *ngSwitchCase="'app-libro6-bloque3-semana7'"></app-libro6-bloque3-semana7>
+            <app-libro6-bloque3-semana8 *ngSwitchCase="'app-libro6-bloque3-semana8'"></app-libro6-bloque3-semana8>
+            <app-libro6-bloque4-semana1 *ngSwitchCase="'app-libro6-bloque4-semana1'"></app-libro6-bloque4-semana1>
+            <app-libro6-bloque4-semana2 *ngSwitchCase="'app-libro6-bloque4-semana2'"></app-libro6-bloque4-semana2>
+            <app-libro6-bloque4-semana3 *ngSwitchCase="'app-libro6-bloque4-semana3'"></app-libro6-bloque4-semana3>
+            <app-libro6-bloque4-semana4 *ngSwitchCase="'app-libro6-bloque4-semana4'"></app-libro6-bloque4-semana4>
+            <app-libro6-bloque5-semana1 *ngSwitchCase="'app-libro6-bloque5-semana1'"></app-libro6-bloque5-semana1>
+            <app-libro6-bloque5-semana2 *ngSwitchCase="'app-libro6-bloque5-semana2'"></app-libro6-bloque5-semana2>
+            <app-libro6-bloque5-semana3 *ngSwitchCase="'app-libro6-bloque5-semana3'"></app-libro6-bloque5-semana3>
+            <app-libro6-bloque5-semana4 *ngSwitchCase="'app-libro6-bloque5-semana4'"></app-libro6-bloque5-semana4>
+            <!--<some-element *ngSwitchDefault>...</some-element>-->
+          </container-element>
+          <!--<app-libro1-bloque1-semana1></app-libro1-bloque1-semana1>-->
+        </div>
+
+        <!--   Tareas   -->
+        <div *ngIf="pageContent == 2">
+          <p>Tareas</p>
+        </div>
+
+        <!--   Índice Maestros   -->
+        <div *ngIf="pageContent == 3">
+          <p>Índice Maestros</p>
+        </div>
+
+        <!--   Calendario   -->
+        <div *ngIf="pageContent == 4">
+          <p>Calendario</p>
+        </div>
+
+        <!--   Evaluación   -->
+        <div *ngIf="pageContent == 5">
+          <p>Evaluación</p>
+        </div>
+
+        <!--   Alumnos   -->
+        <div *ngIf="pageContent == 6">
+          <p>Alumnos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

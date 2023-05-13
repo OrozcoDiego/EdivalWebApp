@@ -1,0 +1,29 @@
+<p class="titulo" [ngStyle]="{'color': colorTitulo}">{{titulo}}</p>
+
+<div class="container-foco">
+    <table class="foco_table">
+        <tr>
+          <td [ngStyle]="{'background-color': colorFoco}">
+            <ul class="foco">
+                <li [innerHTML]="foco1"></li>
+                <li [innerHTML]="foco2"></li>
+            </ul>
+          </td>
+          <td class="foco_celda">
+            <img class="foco_image" src="../../../assets/images/Revalorando/Comun/Foco.png" alt="Imagen">
+            <div class="foco_fondo_1" [ngStyle]="{'background-color': colorFoco}"></div>
+            <div class="foco_fondo_2" [ngStyle]="{'background-color': colorFoco}"></div>
+          </td>
+        </tr>
+    </table> 
+</div>
+
+<br>
+
+<img class="content_image" [src]="imagen" alt="Imagen">
+
+<br><br>
+
+<div *ngFor="let parrafo of lectura;">
+    <p [innerHTML]="parrafo"></p>
+</div>

@@ -1,0 +1,63 @@
+<div class="row"><app-cambiar-pagina></app-cambiar-pagina></div>
+<div class="row">
+  <div id="content_left" class="col">
+    <app-lectura 
+      [titulo]="titulo"
+      [colorTitulo]="colorTitulo"
+      [foco1]="foco1"
+      [foco2]="foco2"
+      [colorFoco]="colorFoco"
+      [imagen]="imagen"
+      [lectura]="lectura">
+    </app-lectura>
+  </div>
+  <div id="content_right" class="col">
+    <app-actividad-titulo
+      [titulo]="actividadTitulo"
+      [imagen]="acctividadImagen">
+    </app-actividad-titulo>
+    
+    <app-lapicito
+      [bloque]="bloque"
+      [texto]="actividad_1">
+    </app-lapicito>
+    
+    <p><b>1.</b> Es mejor conseguir lo que quiero con caprichos.</p>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1">FALSO</mat-radio-button>
+          <mat-radio-button value="2">VERDADERO</mat-radio-button>
+        </mat-radio-group>
+
+        <p><b>2.</b> Si controlo mis antojos podré ser mejor persona.</p>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1">FALSO</mat-radio-button>
+          <mat-radio-button value="2">VERDADERO</mat-radio-button>
+        </mat-radio-group>
+
+        <p><b>3.</b> Primero está mi diversión antes que mi obligación:</p>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1">FALSO</mat-radio-button>
+          <mat-radio-button value="2">VERDADERO</mat-radio-button>
+        </mat-radio-group>
+
+        <p><b>4.</b> Con perseverancia y control, voy a alcanzar mis metas.</p>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1">FALSO</mat-radio-button>
+          <mat-radio-button value="2">VERDADERO</mat-radio-button>
+        </mat-radio-group>
+
+        <p><b>5.</b> Llorar para conseguir lo que quiero es autodominio.</p>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1">FALSO</mat-radio-button>
+          <mat-radio-button value="2">VERDADERO</mat-radio-button>
+        </mat-radio-group>
+
+        <p><b>6.</b> Aunque tenga muchas ganas de jugar, debo mantener el orden donde sea necesario.</p>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1">FALSO</mat-radio-button>
+          <mat-radio-button value="2">VERDADERO</mat-radio-button>
+        </mat-radio-group>
+        
+        <p>Pequeños autodominios te hacen grandes</p>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.lapicito {
+    height: 30px;
+    width: auto;
+    float: left;
+}
+
+.instuccion_actividad {
+    font-family: 'Quicksand_Book';
+    margin-top: 6px;
+    margin-left: 40px;
+}

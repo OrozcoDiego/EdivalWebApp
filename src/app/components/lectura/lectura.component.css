@@ -1,0 +1,63 @@
+.titulo {
+    font-family: 'GothamRoundedBold';
+    text-align: center;
+    font-size: 55px;
+}
+
+.foco_table {
+    height: 100px;
+}
+
+.foco_celda {
+    position: relative;
+}
+
+.foco {
+    color: white;
+    font-family: 'Quicksand_Book';
+    margin-bottom: 0;
+}
+
+.foco_image {
+    height: 80px;
+    width: auto;
+}
+
+.foco_fondo_1 {
+    height: 86px;
+    width: 73px;
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    z-index: -1;
+    border-radius: 0px 39px 47px 0px;
+}
+
+.foco_fondo_2 {
+    height: 38px;
+    width: 62px;
+    position: absolute;
+    bottom: 0px;
+    left: -1px;
+    z-index: -1;
+    border-radius: 0px 0px 21px 0px;
+}
+
+.¿ {
+    display: inline-block;
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1); /* Firefox */
+    -webkit-transform: scaleX(-1); /* Chrome - Safari */
+    -o-transform: scaleX(-1); /* Opera */
+    text-decoration: auto;
+}
+
+.content_image {
+    width: 100%;
+}
+
+.texto {
+    font-family: 'Quicksand_Book';
+    text-align: justify;
+    color: rgb(109, 112, 111);
+}

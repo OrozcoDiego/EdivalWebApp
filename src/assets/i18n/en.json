@@ -1,0 +1,47 @@
+{
+    "indice": {
+        "bloque1": {
+            "titulo": "El caballero comelón",
+            "semana1": "La Orden de la Armadura de Plata",
+            "semana2": "La pesada vida de un caballero comelón",
+            "semana3": "Los valores de los caballeros",
+            "semana4": "Un problema inesperado",
+            "semana5": "El maestro del autodominio",
+            "semana6": "¡Todos a sus posiciones!",
+            "semana7": "La paz es primero",
+            "semana8": "Una persona que sabe controlarse"
+        },
+        "bloque2": {
+            "titulo": "El campamento",
+            "semana1": "El viaje más deseado",
+            "semana2": "El comienzo de una aventura",
+            "semana3": "Un pequeño apuro",
+            "semana4": "Situación inesperada"            
+        },
+        "bloque3": {
+            "titulo": "Ana y Leo",
+            "semana1": "Piensa en los demás",
+            "semana2": "Conoce para confiar",
+            "semana3": "Respeta el tiempo",
+            "semana4": "Convive para hacer amigos",
+            "semana5": "Compartir para ser mejor",
+            "semana6": "Compartir es divertido",
+            "semana7": "Proponer y participar",
+            "semana8": "Ayudar es ayudarse"            
+        },
+        "bloque4": {
+            "titulo": "Misterio en la granja",
+            "semana1": "La granja de la tía Martha",
+            "semana2": "El plan “perfecto”",
+            "semana3": "¿Dónde estabas Pulgas?",
+            "semana4": "La verdad ante todo"            
+        },
+        "bloque5": {
+            "titulo": "Pichín el extraterrestre",
+            "semana1": "Buscando Ferronita",
+            "semana2": "Las locas actitudes de Pichín",
+            "semana3": "¡De haberse moderado!",
+            "semana4": "Lección aprendida"
+        }
+    }
+}

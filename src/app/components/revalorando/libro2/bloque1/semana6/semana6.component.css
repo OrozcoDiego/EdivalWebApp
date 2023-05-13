@@ -1,0 +1,8 @@
+#content_left {
+    width: 50%;
+}
+
+#content_right {
+    width: 50%;
+    position: relative;
+}

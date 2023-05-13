@@ -1,0 +1,44 @@
+<div class="row"><app-cambiar-pagina></app-cambiar-pagina></div>
+<div class="row">
+  <div id="content_left" class="col">
+    <app-lectura 
+      [titulo]="titulo"
+      [colorTitulo]="colorTitulo"
+      [foco1]="foco1"
+      [foco2]="foco2"
+      [colorFoco]="colorFoco"
+      [imagen]="imagen"
+      [lectura]="lectura">
+    </app-lectura>
+  </div>
+  <div id="content_right" class="col">
+    <app-actividad-titulo
+      [titulo]="actividadTitulo"
+      [imagen]="acctividadImagen">
+    </app-actividad-titulo>
+    
+    <app-lapicito
+      [bloque]="bloque"
+      [texto]="actividad_1">
+    </app-lapicito>
+
+    <app-lapicito
+      [bloque]="bloque"
+      [texto]="actividad_2">
+    </app-lapicito>
+    <p><b>1.</b> ¿De qué color eran los chalecos de las abejitas?</p>
+    <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Azul</mat-radio-button>
+        <mat-radio-button value="2">Marrón</mat-radio-button>
+        <mat-radio-button value="3">Amarillo</mat-radio-button>
+    </mat-radio-group>
+
+    <p><b>2.</b> La mariposa que llegó con Patoso era:</p>
+    <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Trabajadora</mat-radio-button>
+        <mat-radio-button value="2">Perezosa</mat-radio-button>
+        <mat-radio-button value="3">Enojona</mat-radio-button>
+    </mat-radio-group>
+    
+  </div>
+</div>

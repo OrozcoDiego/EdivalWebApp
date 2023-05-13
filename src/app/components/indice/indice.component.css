@@ -1,0 +1,390 @@
+/*div Indice*/
+.indice {
+    font-family: "GothamRoundedBold";
+    font-size: 50px;
+    color: rgb(109, 111, 111);
+}
+
+#content_left {
+    width: 50%;
+}
+
+#content_right {
+    width: 50%;
+    position: relative;
+}
+
+.image {
+    width: 80%;
+    position: inherit;
+    left: 50% !important;
+    transform: translate(-50%, 0);
+}
+.content_image {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.image_block {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content_image_block {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: 50% !important;
+    transform: translate(-50%, 0);
+}
+
+.mat-accordion .mat-expansion-panel:first-of-type {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.mat-accordion .mat-expansion-panel:not(.mat-expanded), .mat-accordion .mat-expansion-panel:not(.mat-expansion-panel-spacing) {
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.mat-accordion .mat-expansion-panel:last-of-type {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.mat-expansion-panel-header {
+    height: 100px;
+}
+
+.mat-expansion-panel-header-title {
+    width: 60%;
+    flex-basis: auto;
+}
+
+.mat-expansion-panel-header-description {
+    width: 40%;
+    flex-basis: auto;
+}
+
+.valor {
+    display: inline;
+}
+
+.blockColor {
+    font-family: 'GothamRoundedBold';
+    color: white;
+    background-color: red;
+    height: 80px;
+    border-radius: 13px;
+    width: 165px;
+}
+
+.blockColor2 {
+    font-family: 'GothamRoundedBold';
+    background-color: transparent;
+    height: 80px;
+    color: white;
+    z-index: 2;
+}
+
+.b {
+    font-size: 90px;
+    /* margin: 0; */
+    position: relative;
+    top: -28px;
+    float: left;
+}
+
+.loque {
+    font-size: 25px;
+    position: relative;
+    float: left;
+    top: 22px;
+}
+
+.cuadroB {
+    height: 80px;
+    width: 69px;
+    background-color: blue;
+    position: absolute;
+    z-index: 1;
+    border-radius: 13px 26px 26px 13px;
+}
+
+.cuadroLoque {
+    height: 45px;
+    width: 128px;
+    background-color: blue;
+    position: absolute;
+    margin-left: 40px;
+    z-index: 1;
+    border-radius: 19px;
+}
+
+.cuadroLoque2 {
+    height: 60px;
+    width: 150px;
+    background-color: blue;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -20px;
+    z-index: 1;
+    border-radius: 19px;
+}
+
+.b1 {
+    background: rgb(0, 174, 239);
+}
+
+.b2 {
+    background: rgb(241, 90, 85);
+}
+
+.b3 {
+    background: rgb(174, 212, 118);
+}
+
+.b4 {
+    background: rgb(255, 216, 117);
+}
+
+.b5 {
+    background: rgb(155, 143, 197);
+}
+
+.titulo {
+    font-family: 'GothamRoundedBold';
+    text-align: center;
+    font-size: 55px;
+    margin-top: 30px;
+}
+
+/***  Titulos Libro 1  ***/
+#title-libro1-block1 {
+    color: rgb(155, 203, 118);
+}
+
+#title-libro1-block2 {
+    color: rgb(176, 206, 71);
+}
+
+#title-libro1-block3 {
+    color: rgb(188, 173, 213);
+}
+
+#title-libro1-block4 {
+    color: rgb(137, 214, 248);
+}
+
+#title-libro1-block5 {
+    color: rgb(246, 180, 167);
+}
+
+/***  Titulos Libro 2  ***/
+#title-libro2-block1 {
+    color: rgb(255, 213, 101);
+}
+
+#title-libro2-block2 {
+    color: rgb(255, 215, 118);
+}
+
+#title-libro2-block3 {
+    color: rgb(147, 135, 192);
+}
+
+#title-libro2-block4 {
+    color: rgb(0, 195, 243);
+}
+
+#title-libro2-block5 {
+    color: rgb(215, 66, 151);
+}
+
+/***  Titulos Libro 3 y 4  ***/
+#title-libro3-block1, #title-libro4-block1 {
+    color: rgb(149, 204, 121);
+}
+
+#title-libro3-block2, #title-libro4-block2 {
+    color: rgb(255, 212, 115);
+}
+
+#title-libro3-block3, #title-libro4-block3 {
+    color: rgb(205, 189, 221);
+}
+
+#title-libro3-block4, #title-libro4-block4 {
+    color: rgb(127, 212, 247);
+}
+
+#title-libro3-block5, #title-libro4-block5 {
+    color: rgb(250, 193, 178);
+}
+
+/***  Titulos Libro 5  ***/
+#title-libro5-block1 {
+    color: rgb(49, 128, 195);
+}
+
+#title-libro5-block2 {
+    color: rgb(159, 113, 177);
+}
+
+#title-libro5-block3 {
+    color: rgb(48, 192, 208);
+}
+
+#title-libro5-block4 {
+    color: rgb(0, 194, 242);
+}
+
+#title-libro5-block5 {
+    color: rgb(146, 209, 117);
+}
+
+/***  Titulos Libro 6  ***/
+#title-libro6-block1 {
+    color: rgb(229, 186, 81);
+}
+
+#title-libro6-block2 {
+    color: rgb(178, 212, 87);
+}
+
+#title-libro6-block3 {
+    color: rgb(48, 192, 208);
+}
+
+#title-libro6-block4 {
+    color: rgb(0, 194, 242);
+}
+
+#title-libro6-block5 {
+    color: rgb(36, 182, 123);
+}
+
+.por {
+    font-family: 'Quicksand_Book';
+    text-align: center;
+    font-size: 16px;
+    margin-top: -20px;
+}
+
+.glosarioValores {
+    text-align: center;
+}
+
+.subtitulo_1, .subtitulo_2, .subtitulo_3 {
+    font-family: 'GothamRoundedBold';
+    font-size: 42px;
+}
+
+.subtitulo_2 {
+    font-weight: bold;
+    font-style: oblique;
+    cursor: help;
+    /* text-decoration: underline;*/
+}
+
+/***  Subtitulos Libro 1  ***/
+#subtitle-libro1-block1, #subtitle-libro2-block1, #subtitle-libro3-block1,
+#subtitle-libro4-block1, #subtitle-libro5-block1, #subtitle-libro6-block1 {
+    color: rgb(0, 192, 242);
+}
+
+#subtitle-libro1-block2, #subtitle-libro2-block2, #subtitle-libro3-block2,
+#subtitle-libro4-block2, #subtitle-libro5-block2, #subtitle-libro6-block2 {
+    color: rgb(238, 89, 85);
+}
+
+#subtitle-libro1-block3, #subtitle-libro2-block3, #subtitle-libro3-block3,
+#subtitle-libro4-block3, #subtitle-libro5-block3, #subtitle-libro6-block3 {
+    color: rgb(181, 213, 117);
+}
+
+#subtitle-libro1-block4, #subtitle-libro2-block4, #subtitle-libro3-block4,
+#subtitle-libro4-block4, #subtitle-libro5-block4, #subtitle-libro6-block4 {
+    color: rgb(255, 218, 120);
+}
+
+#subtitle-libro1-block5, #subtitle-libro2-block5, #subtitle-libro3-block5,
+#subtitle-libro4-block5, #subtitle-libro5-block5, #subtitle-libro6-block5 {
+    color: rgb(159, 147, 199);
+}
+
+.valor1_1, .valor1_2, .valor1_3,
+.valor2_1, .valor2_2, .valor2_3,
+.valor3_1, .valor3_2, .valor3_3 {
+    font-family: 'Quicksand_Book';
+    font-size: 28px;
+}
+
+.valor1_2, .valor2_2, .valor3_2 {
+    font-family: 'GothamRoundedBold';
+    font-weight: bold;
+    color: rgb(109, 111, 111);
+    cursor: help;
+}
+
+::ng-deep .tooltip {
+    font-size: 30px !important;
+    color: red !important;
+    font-family: 'Quicksand_Book' !important;
+    background-color: red !important;
+    border: 1px solid black !important;
+}
+
+.actividades {
+    text-align: end;
+}
+
+.button-semana {
+    min-height: 40px;
+    margin: 4px;
+    background: bisque;
+    border-style: hidden;
+    border-radius: 8px;
+    /*border: 3px solid bisque;*/
+}
+
+.button-semana:hover {
+    /*border: none;*/
+    transform: scale(1.05);
+    
+}
+
+.bloque1:hover {
+    background: rgb(0, 174, 239);
+}
+
+.bloque2:hover {
+    background: rgb(241, 90, 85);
+}
+
+.bloque3:hover {
+    background: rgb(174, 212, 118);
+}
+
+.bloque4:hover {
+    background: rgb(255, 216, 117);
+}
+
+.bloque5:hover {
+    background: rgb(155, 143, 197);
+}
+
+.semana {
+    text-align: left;
+    margin:-2.5% 0;
+}
+
+.titulo-semana {
+    text-align: end;
+    margin:-2.5% 0;
+}
